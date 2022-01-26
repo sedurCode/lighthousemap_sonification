@@ -1,8 +1,8 @@
-# Beacon map
-This map shows all the blinking beacons from [OpenStreetMap](https://www.openstreetmap.org/).
+# Lighthouse map Sonification
+This repository (will) hosts a sonification of the blinking beacon map.
 
+The beacon map shows all the blinking beacons from [OpenStreetMap](https://www.openstreetmap.org/).
 ![Demo time](https://geodienst.github.io/lighthousemap/demo.gif)
-
 More specifically, it asks the [Overpass API](https://www.overpass-api.de) for all elements with an `seamark:light:sequence` attribute, decodes these, and displays them as coloured circles on the map using [Leaflet](https://leafletjs.com). It also tries to take the `seamark:light:range` and `seamark:light:colour` into account.
 
 ## Overpass API
@@ -15,3 +15,14 @@ The `leaflet.indexedfeaturelayer.js` file contains an extension on Leaflet's Geo
 
 ## Credits
 This map is made by the [Geodienst](https://www.geodienst.xyz) because it was a fun idea we wanted to try out. Feel free to fork this map and make your own visualisation of OSM data, or contribute improvements back to us. 
+
+# TODO
+-API parsing
+-web audio api hooks
+-basic voices
+-note per colour
+-pattern sync
+-register per size (bigger lower)
+-changing mode/chord based on time
+-reverb
+-modulation
